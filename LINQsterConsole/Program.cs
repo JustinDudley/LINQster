@@ -29,6 +29,9 @@ namespace LINQsterConsole {
             products.Print();  // generic List class DOES NOT have a print!  The print we're calling is the static extension method
             Console.WriteLine("\n THAT WAS A PRINT METHOD CALLED FROM ANOTHER CLASS. IMPRESSIVE, NO?? \n\n");
 
+            Users myUser = Users.GetByPk(4);
+            myUser.PrintFullName();
+            Console.WriteLine("-and THAT is an extension method I created myself.  It prints one user's full name. \n\n");
 
 
 
